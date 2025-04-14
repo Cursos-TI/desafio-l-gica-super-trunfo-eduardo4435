@@ -13,10 +13,8 @@ int main() {
     float densidade, densidade2;
     float pibPerCapito, pibPerCapito2;
     long int poderCarta1, poderCarta2;
-    int atributoEscolhido1; // para armazenar o primeiro atributo escolhido pelo usuário
-    int atributoEscolhido2; // para armazenar o segundo atributo escolhido pelo usuário
-    int resultado1;
-    int resultado2;
+    int atributoEscolhido1, atributoEscolhido2; // para armazenar o atributo escolhido pelo usuário
+    int resultado1, resultado2;
 
     // entrada de dados da primeira carta
     printf("DIGITE OS DADOS DA PRIMEIRA CARTA:\n");
@@ -77,7 +75,6 @@ int main() {
     printf("Numero de pontos turisticos: %d\n", pontosTuristicos);
     printf("Densidade Populacional: %.2f\n", densidade);
     printf("PIB Per Capito: %.2f Reais\n", pibPerCapito);
-    printf("Poder: %d\n", poderCarta1);
 
     printf("\nCarta 2: \n");
     printf("Estado: %c\n", estado2);
@@ -89,7 +86,6 @@ int main() {
     printf("Numero de pontos turisticos: %d\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f\n", densidade2);
     printf("PIB Per Capito: %.2f Reais\n", pibPerCapito2);
-    printf("Poder: %d\n", poderCarta2);
 
     // Pergunta ao usuário qual atributo ele deseja comparar
     printf("\ninforme o primeiro atributo que voce deseja comparar: \n");
@@ -227,13 +223,13 @@ int main() {
         //resultado das comparações
         if (resultado1 && resultado2) {
             printf("----------------------\n");
-            printf("PARABENS, VOCE GANHOU!!\n");
+            printf("CARTA 1 GAMHOU!\n");
         } else if (resultado1 != resultado2) {
             printf("----------------------\n");
-            printf("O JOGO EMPATOU!!\n");
+            printf("O JOGO EMPATOU!\n");
         } else {
             printf("----------------------\n");
-            printf("INFELIZMENTE VOCE PERDEU!!\n");
+            printf("CARTA 2 GANHOU!\n");
         }
     }
 
